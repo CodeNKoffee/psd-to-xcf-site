@@ -51,11 +51,11 @@ export const footerLinks = [
         href: "https://linkedin.com/in/h4temsoliman",
       },
       { 
-        name: "LinkedIn", 
+        name: "GitHub", 
         href: "https://github.com/CodeNKoffee",
       },
       { 
-        name: "LinkedIn", 
+        name: "X", 
         href: "https://x.com/h4temsoliman",
       },
       { 
