@@ -48,7 +48,7 @@ export default function Footer() {
               <span className="text-5xl font-bold text-yellow-400">LayerLeap</span>
             </Link>
             <span className="text-xs font-medium mt-4 text-white">
-              Copyright &copy; {currentYear} Hatem Soliman and the Packship documentation authors.
+              Copyright &copy; {currentYear} Hatem Soliman and the LayerLeap documentation authors.
             </span>
           </div>
         </div>
