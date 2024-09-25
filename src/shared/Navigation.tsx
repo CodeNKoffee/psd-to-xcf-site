@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { navLinks } from "../../constants";
+import Image from "next/image";
+import layerleapLogo from "../app/assets/logo.png";
 
 const isExternal = (url: string) => /^https?:\/\//.test(url);
 const isAnchorLink = (url: string) => /^#/.test(url);
@@ -10,13 +12,14 @@ export default function Navigation() {
       <div className="kontainer">
         <div className="w-full row flex justify-between items-center">
           <Link href="/" className="w-1/3 text-3xl text-packship-purple font-bold">
-            <figure>
+            <figure className="flex justify-center items-center gap-2">
+              <Image
+                src={layerleapLogo}
+                alt="LayerLeap logo"
+                width={25}
+                className="rounded-lg"
+              />
               <span className="text-2xl font-bold text-yellow-400">LayerLeap</span>
-              {/* <Image
-                src={packshipLogo}
-                alt="Packship logo"
-                width={150}
-              /> */}
             </figure>
           </Link>
           <div className="hidden md:flex gap-8">

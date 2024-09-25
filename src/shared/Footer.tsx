@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { footerLinks } from "../../constants";
+import Image from "next/image";
+import layerleapLogo from "../app/assets/logo.png";
 
 const isExternal = (url: string) => /^https?:\/\//.test(url);
 const isAnchorLink = (url: string) => /^#/.test(url);
@@ -32,16 +34,18 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-          <div className="text-left w-full *: sm:w-1/4 flex flex-col items-center sm:items-start justify-start">
+          <div className="text-left w-full sm:w-1/3 flex flex-col items-center sm:items-start justify-start">
             <Link
               href="/"
-              className="text-3xl"
+              className="text-3xl flex justify-center items-center gap-4"
             >
-              <span className="text-6xl font-bold text-yellow-400">LayerLeap</span>
-              {/* <Image
-                src={packshipLogo}
-                alt="Packship logo"
-              />  */}
+              <Image
+                src={layerleapLogo}
+                alt="LayerLeap logo"
+                width={75}
+                className="rounded-lg"
+              /> 
+              <span className="text-5xl font-bold text-yellow-400">LayerLeap</span>
             </Link>
             <span className="text-xs font-medium mt-4 text-white">
               Copyright &copy; {currentYear} Hatem Soliman and the Packship documentation authors.
