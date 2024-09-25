@@ -21,7 +21,7 @@ export default function Home() {
     <Suspense>
       <div className="relative min-h-screen">
         <div
-          className="fixed inset-0 bg-cover bg-center bg-no-repeat z-[-10] blur-md opacity-50"
+          className="fixed inset-0 bg-cover bg-center bg-no-repeat z-[-10] blur-lg opacity-50"
           style={{ backgroundImage: `url(${FileConversionImg.src})` }}
         ></div>
         <Navigation />

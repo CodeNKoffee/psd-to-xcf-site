@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
+import DonationsLink from "@/shared/DonationsLink";
 
 export default function Hero() {
 
@@ -47,6 +48,7 @@ export default function Hero() {
               Sign Up for Updates!
             </Link>
           </button>
+          <DonationsLink color="text-white" linkColor="text-yellow-500" />
           {/* <div className="mt-32 animate-bounce flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4" data-aos="fade-up">
             <Link
               href="https://www.producthunt.com/posts/packship?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-packship"
