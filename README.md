@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LayerLeap: Batch PSD to XCF Converter
 
-## Getting Started
+> **Note:** This project is currently in BETA and under active testing. You may encounter bugs. Please don't hesitate to report issues or contribute if you feel confident. Thank you!
 
-First, run the development server:
+"Effortlessly leap between Photoshop and GIMP, preserving your layer structures."
+
+LayerLeap is a powerful TypeScript-based command-line tool that simplifies the process of batch converting Photoshop (PSD) files to GIMP's native XCF format. Unlike other conversion tools, LayerLeap ensures that the layer structure of your PSD files is preserved, preventing flattening during the conversion process.
+
+## Features
+
+- **Batch Processing**: Convert hundreds of PSD files to XCF format with a single command.
+- **Layer Preservation**: Maintain the integrity of your layer structure during the conversion process.
+- **Cross-Platform Compatibility**: Works seamlessly on Windows, macOS, and Linux.
+- **Detailed Logging**: Receive comprehensive logs and error reports for each conversion, including failed files.
+- **Progress Reporting**: Monitor the conversion progress with a visual indicator.
+- **Resumable Conversions**: Resume interrupted batch conversions without starting from the beginning.
+
+## Installation
+
+You can install LayerLeap using npm:
+
+### For Windows
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install -g layerleap
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### For MacOS & Linux
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+sudo npm install -g layerleap
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
 
-## Learn More
+To convert a batch of PSD files to XCF format, run the following command:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+layerleap --input="/path/to/psd/files" --output="/path/to/output/directory"
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can also customize the conversion process by using additional options:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+layerleap --input="/path/to/psd/files" --output="/path/to/output/directory" --concurrency=4 --preserveLayers=true
+```
 
-## Deploy on Vercel
+For more information on the available options, run:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+layerleap --help
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+We welcome contributions to LayerLeap! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/CodeNKoffee/layerleap).
+
+## License
+
+LayerLeap is licensed under the [MIT License](LICENSE).

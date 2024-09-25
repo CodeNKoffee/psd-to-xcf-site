@@ -44,7 +44,7 @@ export default function Hero() {
               href="mailto:layerleapcli@gmail.com"
               className="bg-yellow-500 hover:bg-yellow-400 rounded-full text-lg lg:text-2xl text-framify-grey px-8 py-4 font-bold mt-24 transition ease-in-out"
             >
-              Get Notified when its Out!
+              Sign Up for Updates!
             </Link>
           </button>
           {/* <div className="mt-32 animate-bounce flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4" data-aos="fade-up">
