@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "LayerLeap",
-  description: "Batch Convert PSD to GIMP",
+  title: "PSDtoGIMP",
+  description: "Batch Convert PSD to XCF",
 };
 
 export default function RootLayout({
