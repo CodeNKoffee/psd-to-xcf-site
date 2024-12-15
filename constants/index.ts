@@ -57,7 +57,7 @@ export const footerLinks = [
     ],
   },
   {
-    title: "By the Maker of PackShip",
+    title: "By the Maker of LayerLeap",
     links: [
       { 
         name: "React Framify", 
@@ -72,12 +72,12 @@ export const footerLinks = [
         href: "https://memento-game.firebaseapp.com/",
       },
       { 
-        name: "LayerLeap", 
-        href: "https://layerleap.hatemsoliman.dev/",
-      },
-      { 
         name: "Quantum Fly", 
         href: "https://quantumfly.hatemsoliman.dev/",
+      },
+      { 
+        name: "PackShip", 
+        href: "https://packship.hatemsoliman.dev/",
       },
       { 
         name: "Polar Paradise", 
